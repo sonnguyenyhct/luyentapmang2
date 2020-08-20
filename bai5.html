@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+    <script>
+        let chain1 = prompt("Nhập vào chuỗi a");
+        let chain2 = prompt("Nhập vào chuỗi b");
+        let arraychar1 = chain1.split("");
+        let arraychar2 = chain2.split("");
+        let ischeck = true;
+            if (arraychar1.length === arraychar2.length){
+                for (let count = 0; count < arraychar1.length; count++){
+                    if (arraychar1[count] !== arraychar2[count]){
+                        ischeck = false;
+                    }
+                }
+            }else {
+                ischeck = false;
+        }
+        if (ischeck){
+            alert("2 chuỗi giống nhau");
+        }else {
+            alert("2 chuỗi khác nhau");
+        }
+
+    </script>
+
+</body>
+</html>

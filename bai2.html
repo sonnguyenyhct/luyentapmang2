@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+    <script>
+        let arrayChar = [ 'c', 's', 'c', '2', '6', '1' ];
+        let change = "";
+        for (let num = 0; num < arrayChar.length/2; num++){
+            change = arrayChar[num];
+            arrayChar[num] = arrayChar[arrayChar.length - num - 1];
+            arrayChar[arrayChar.length - num - 1] = change;
+        }
+        alert(arrayChar);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+    <script>
+        let chain = prompt("Nhập vào chuỗi :");
+        let arraychar = chain.split("");
+        let nums = 0;
+        for (count = 0; count < arraychar.length; count++){
+            if (arraychar[count] !== " " && arraychar[count+1] === " "){
+                nums += 1;
+            }
+        }
+        if (arraychar[arraychar.length - 1] !== " "){
+            nums += 1;
+        }
+        alert(nums);
+    </script>
+</body>
+</html>

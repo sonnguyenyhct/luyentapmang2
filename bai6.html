@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<script>
+    let numbers = [];
+    let numArray = parseInt(prompt("Nhập vào số lượng phần tử"));
+
+    for (let count = 0; count < numArray; count++){
+        let inputArray = prompt("Nhập vào kí tự");
+        numbers.push(inputArray);
+    }
+    for (let count = 0; count < numbers.length; count++){
+        if (numbers[count] === "-"){
+            numbers[count] = "_";
+        }
+    }
+    alert(numbers);
+
+</script>
+</body>
+</html>

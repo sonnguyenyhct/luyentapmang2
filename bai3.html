@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+    <script>
+        let numbers = [];
+        let numArray = parseInt(prompt("Nhập vào số lượng phần tử"));
+        let nums = 0;
+        for (let count = 0; count < numArray; count++){
+            let inputArray = parseInt(prompt("Nhập vào ký tự"));
+            numbers.push(inputArray);
+
+            if (!isNaN(numbers[count])){
+                nums += 1;
+            }
+        }
+        alert(nums)
+
+    </script>
+</body>
+</html>
